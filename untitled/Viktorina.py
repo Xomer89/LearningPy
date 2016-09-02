@@ -60,6 +60,10 @@ def main():
             print(explanation)
             score += 1
             print("Score: ", score, "\n\n")
+        else:
+            print("\nNo!", end=" ")
+            print(explanation)
+        print("Score: ", score, "\n\n")
         """Going to the next question"""
         category, question, answers, correct, explanation = next_block(trivia_file)
     trivia_file.close()
