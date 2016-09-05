@@ -1,6 +1,7 @@
 #A simple class presentaion
 
 class Critter(object):
+    """Virtual pet"""
     def talk(self):
         print("Hey! I'm a pet from class Critter")
 
