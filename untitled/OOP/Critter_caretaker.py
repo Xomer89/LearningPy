@@ -43,7 +43,7 @@ class Critter(object):
         self.__pass_time()
 
 def main():
-    crit_name = input("What will you call your pet?")
+    crit_name = input("What will you call your pet? ")
     crit = Critter(crit_name)
 
     choice = None
@@ -56,7 +56,7 @@ def main():
         3 - Play with it
         0 - Exit
         """)
-        choice = input("Your choice")
+        choice = input("Your choice: ")
         print()
 
         #Talk to pet
