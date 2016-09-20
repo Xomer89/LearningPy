@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1bdc1d6d-1a9a-4bc4-9b00-cc8a7bbdd787" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OOP/AlienDeath.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/untitled.iml" afterPath="$PROJECT_DIR$/.idea/untitled.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OOP/Cards.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="untitled.iws" />
@@ -35,11 +33,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AlienDeath.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AlienDeath.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/OOP/AlienDeath.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="396">
               <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Cards.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/OOP/Cards.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="49">
+              <caret line="38" column="28" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -79,6 +87,7 @@
         <option value="$PROJECT_DIR$/OOP/Critter_caretaker.py" />
         <option value="$PROJECT_DIR$/OOP/BlackJack.py" />
         <option value="$PROJECT_DIR$/OOP/AlienDeath.py" />
+        <option value="$PROJECT_DIR$/OOP/Cards.py" />
       </list>
     </option>
   </component>
@@ -113,6 +122,21 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="untitled">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -147,21 +171,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="untitled">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -185,24 +194,7 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1149" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
   </component>
-  <component name="RunManager" selected="Python.AlienDeath">
-    <configuration default="false" name="FileReading" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="untitled" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/FileReading.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.Cards">
     <configuration default="false" name="Critter" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -267,6 +259,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="untitled" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/OOP/AlienDeath.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Cards" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/OOP" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="untitled" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/OOP/Cards.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -424,19 +433,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python.hangman" />
-      <item index="1" class="java.lang.String" itemvalue="Python.FileReading" />
-      <item index="2" class="java.lang.String" itemvalue="Python.Critter" />
-      <item index="3" class="java.lang.String" itemvalue="Python.property_critter" />
-      <item index="4" class="java.lang.String" itemvalue="Python.Critter_caretaker" />
-      <item index="5" class="java.lang.String" itemvalue="Python.AlienDeath" />
+      <item index="1" class="java.lang.String" itemvalue="Python.Critter" />
+      <item index="2" class="java.lang.String" itemvalue="Python.property_critter" />
+      <item index="3" class="java.lang.String" itemvalue="Python.Critter_caretaker" />
+      <item index="4" class="java.lang.String" itemvalue="Python.AlienDeath" />
+      <item index="5" class="java.lang.String" itemvalue="Python.Cards" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.AlienDeath" />
-        <item index="1" class="java.lang.String" itemvalue="Python.Critter_caretaker" />
-        <item index="2" class="java.lang.String" itemvalue="Python.property_critter" />
-        <item index="3" class="java.lang.String" itemvalue="Python.Critter" />
-        <item index="4" class="java.lang.String" itemvalue="Python.FileReading" />
+        <item index="0" class="java.lang.String" itemvalue="Python.Cards" />
+        <item index="1" class="java.lang.String" itemvalue="Python.AlienDeath" />
+        <item index="2" class="java.lang.String" itemvalue="Python.Critter_caretaker" />
+        <item index="3" class="java.lang.String" itemvalue="Python.property_critter" />
+        <item index="4" class="java.lang.String" itemvalue="Python.Critter" />
       </list>
     </recent_temporary>
   </component>
@@ -524,7 +533,14 @@
       <option name="project" value="LOCAL" />
       <updated>1473235590743</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="AlienDeath edit">
+      <created>1474012949120</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1474012949120</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -566,27 +582,14 @@
     <MESSAGE value="critter edit" />
     <MESSAGE value="property_critter edit" />
     <MESSAGE value="critter_caretaker edit" />
-    <option name="LAST_COMMIT_MESSAGE" value="critter_caretaker edit" />
+    <MESSAGE value="AlienDeath edit" />
+    <option name="LAST_COMMIT_MESSAGE" value="AlienDeath edit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://D:/СКРИПТ/IXIA/Conf_IXIA/make_cgw_pair.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Anagramms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -916,6 +919,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2016.2/system/python_stubs/523396265/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="771" column="8" selection-start-line="771" selection-start-column="8" selection-end-line="771" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OOP/Cards.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="49">
+          <caret line="38" column="28" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
           <folding />
         </state>
       </provider>
