@@ -22,6 +22,16 @@ class Card(object):
     def flip(self):
         self.is_face_up = not self.is_face_up
 
+    @property
+    def value(self):
+        if self.is_face_up:
+            v = self.RANKS.index(self.rank) + 1
+            if v > 10:
+                v = 10
+        else:
+            v = None
+        return v
+
 
 class Hand(object):
     """ A hand of playing cards. """
@@ -68,7 +78,11 @@ class Deck(Hand):
                     top_card = self.cards[0]
                     self.give(top_card, hand)
                 else:
-                    print("Can't continue deal. Out of cards!")
+                    Deck.populate(self)
+                    Deck.shuffle(self)
+                    top_card = self.cards[0]
+                    self.give(top_card, hand)
+                    #print("Can't continue deal. Out of cards!")
 
 
 if __name__ == "__main__":
