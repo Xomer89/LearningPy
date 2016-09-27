@@ -201,7 +201,7 @@ class BJ_Deck(mcards.Deck):
     def populate(self):
         for suit in BJ_Card.SUITS:
             for rank in BJ_Card.RANKS:
-                self.mcards.append(BJ_Card(rank, suit))
+                self.cards.append(BJ_Card(rank, suit))
 
 
 class BJ_Hand(mcards.Hand):
@@ -220,18 +220,18 @@ class BJ_Hand(mcards.Hand):
     @property
     def total(self):
         # if a card in the hand has value of None, then total is None
-        for card in self.mcards:
+        for card in self.cards:
             if not card.value:
                 return None
 
         # add up card values, treat each Ace as 1
         t = 0
-        for card in self.mcards:
+        for card in self.cards:
             t += card.value
 
         # determine if hand contains an Ace
         contains_ace = False
-        for card in self.mcards:
+        for card in self.cards:
             if card.value == BJ_Card.ACE_VALUE:
                 contains_ace = True
 
@@ -277,7 +277,7 @@ class BJ_Dealer(BJ_Hand):
         print(self.name, "busts.")
 
     def flip_first_card(self):
-        first_card = self.mcards[0]
+        first_card = self.cards[0]
         first_card.flip()
 
 
