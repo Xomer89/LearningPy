@@ -1,14 +1,20 @@
-#Module mcards for game BlackJack
+# Cards Module
+# Basic classes for a game with playing cards
 
 class Card(object):
-    """Card which can be face up or down"""
+    """ A playing card. """
+    RANKS = ["A", "2", "3", "4", "5", "6", "7",
+             "8", "9", "10", "J", "Q", "K"]
+    SUITS = ["c", "d", "h", "s"]
+
     def __init__(self, rank, suit, face_up=True):
-        super(Card, self).__init__(rank, suit)
+        self.rank = rank
+        self.suit = suit
         self.is_face_up = face_up
 
     def __str__(self):
         if self.is_face_up:
-            rep = super(Card, self).__str__()
+            rep = self.rank + self.suit
         else:
             rep = "XX"
         return rep
@@ -16,8 +22,9 @@ class Card(object):
     def flip(self):
         self.is_face_up = not self.is_face_up
 
+
 class Hand(object):
-    """Hand - a number of cards for one player"""
+    """ A hand of playing cards. """
 
     def __init__(self):
         self.cards = []
@@ -26,7 +33,7 @@ class Hand(object):
         if self.cards:
             rep = ""
             for card in self.cards:
-                rep += str(card) + " "
+                rep += str(card) + "\t"
         else:
             rep = "<empty>"
         return rep
@@ -41,10 +48,11 @@ class Hand(object):
         self.cards.remove(card)
         other_hand.add(card)
 
+
 class Deck(Hand):
-    """Deck of playing cards"""
+    """ A deck of playing cards. """
+
     def populate(self):
-        self.cards = []
         for suit in Card.SUITS:
             for rank in Card.RANKS:
                 self.add(Card(rank, suit))
@@ -53,15 +61,16 @@ class Deck(Hand):
         import random
         random.shuffle(self.cards)
 
-    def deal(self, hands, per_hand = 1):
+    def deal(self, hands, per_hand=1):
         for rounds in range(per_hand):
             for hand in hands:
                 if self.cards:
                     top_card = self.cards[0]
                     self.give(top_card, hand)
                 else:
-                    print("No more cards to give!")
+                    print("Can't continue deal. Out of cards!")
+
 
 if __name__ == "__main__":
-    print("This is a module for card games")
-    input("\n\nPress ENTER to exit.")
+    print("This is a module with classes for playing cards.")
+    input("\n\nPress the enter key to exit.")
