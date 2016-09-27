@@ -26,7 +26,7 @@ class Hand(object):
                 rep += str(card) + " "
         else:
             rep = "<empty>"
-            return rep
+        return rep
 
     def clear(self):
         self.cards = []
@@ -41,15 +41,48 @@ class Hand(object):
 
 #main part
 
-card1 = Card(rank = "A", suit = "c")
+card1 = Card(rank="A", suit="c")
 print("Here's your card: ")
 print(card1)
-card2 = Card(rank = "2", suit = "c")
-card3 = Card(rank = "3", suit = "c")
-card4 = Card(rank = "4", suit = "c")
-card5 = Card(rank = "5", suit = "c")
+
+card2 = Card(rank="2", suit="c")
+card3 = Card(rank="3", suit="c")
+card4 = Card(rank="4", suit="c")
+card5 = Card(rank="5", suit="c")
+
 print("Printing another 4 cards: ")
 print(card2)
 print(card3)
 print(card4)
 print(card5)
+
+my_hand = Hand()
+print("Printing cards on hand before dealing: ")
+print(my_hand)
+
+my_hand.add(card1)
+my_hand.add(card2)
+my_hand.add(card3)
+my_hand.add(card4)
+my_hand.add(card5)
+
+print("Printing cards on hand after dealing: ")
+print(my_hand)
+
+your_hand = Hand()
+my_hand.give(card1, your_hand)
+my_hand.give(card2, your_hand)
+
+print("\nI gave you two of my cards")
+print("Now you have: ")
+print(your_hand)
+print("And I have: ")
+print(my_hand)
+
+my_hand.clear()
+print("\nI dropped my cards and now I have: ")
+print(my_hand)
+
+input("\n\nPress ENTER to exit")
+
+
