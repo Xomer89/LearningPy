@@ -22,15 +22,15 @@ class Card(object):
     def flip(self):
         self.is_face_up = not self.is_face_up
 
-    @property
-    def value(self):
-        if self.is_face_up:
-            v = self.RANKS.index(self.rank) + 1
-            if v > 10:
-                v = 10
-        else:
-            v = None
-        return v
+    # @property
+    # def value(self):
+    #     if self.is_face_up:
+    #         v = self.RANKS.index(self.rank) + 1
+    #         if v > 10:
+    #             v = 10
+    #     else:
+    #         v = None
+    #     return v
 
 
 class Hand(object):
